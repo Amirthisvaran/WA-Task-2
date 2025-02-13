@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  background-color: rgba(128, 128, 128, 0.379);
+  font-family: "Inter";
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 500px;
+  background-color: white;
+  padding: 10px 30px 30px 30px;
+  border-radius: 11px;
+}
+
+h1 {
+  color: #b51e25;
+  text-align: center;
+}
+
+.location,
+.question {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.379);
+  width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.per {
+  border: none;
+  background-color: rgba(128, 128, 128, 0.379);
+  width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.note-p {
+  background-color: #b51e25;
+  padding: 5px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: #b51e25;
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+
+.wrapper {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.ques-container {
+  background: rgba(128, 128, 128, 0.295);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border-left: 5px solid #b51e25;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ques-container:hover {
+  transform: scale(1.02);
+}
+
+.ques {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.ans {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.nff {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  margin-top: 20px;
+}
