@@ -13,6 +13,22 @@ app.post('/', async(req,res) => {
     res.send(result)
 })
 
+app.get('/feedback', async (req, res) => {
+    try {
+        let filter = {};
+
+        if (req.query.location) {
+            filter.location = { $regex: req.query.location, $options: "C"};
+        }
+
+        const feedbacks = await Feedbacks.find(filter);
+        res.json(feedbacks);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+
 app.get('/feedback', (req,res) => {
     Feedbacks.find()
     .then(feedback => res.json(feedback))
